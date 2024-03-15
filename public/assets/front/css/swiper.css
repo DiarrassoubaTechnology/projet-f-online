@@ -1,0 +1,138 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container{
+  max-width: 1320px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: stretch;
+}
+.swiper-slide{
+  height: auto !important;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+  align-items: stretch;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* padding: 3px; */
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+.soustitle{
+  font-size: 14px;
+  color: #cbd0d4;
+  text-transform: uppercase;
+}
+.timer{
+  font-size: 16px;
+  color: #cbd0d4;
+}
+.cours_gratuit{
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.swiper-navBtn{
+  color: #161991;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #cbd0d4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #161991;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #cbd0d4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .timer{
+    font-size: 13px;
+  }
+}
